@@ -36,6 +36,7 @@ function solution(n, k, enemy) {
             break;
         } else if (total === n) {
             answer = i+1;
+            break;
         }
         
         if(i === enemy.length - 1) {
