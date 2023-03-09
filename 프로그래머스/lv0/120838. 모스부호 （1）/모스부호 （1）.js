@@ -6,10 +6,6 @@ function solution(letter) {
                     '-.--':'y','--..':'z'
     };
     let answer = "";
-    letter.split(" ").forEach(word => {
-        word.split("/").forEach(code => {
-            answer += morse[code];
-        });
-    });
+    letter.split(" ").forEach(word => {answer += morse[word]});
     return answer;
 }
